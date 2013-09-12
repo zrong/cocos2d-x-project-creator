@@ -1,3 +1,5 @@
+[修改cocos2d-x项目创建器，支持自定义项目路径](http://zengrong.net/post/1925.htm)
+
 ## 问题
 
 cocos2d-x目前的项目生成使用的是 `tools/project-creator/create_project.py` 命令。 这个命令生成的项目，默认处于cocos2d-x的projects文件夹中。
