@@ -44,7 +44,7 @@ Virtual Studio项目解决方案中对于其他项目的引用，采用的是相
 
 我将它们按照原来的目录结构进行了整理，使其仅包含这两个修改过的文件夹。由于内容可能会经常修改，我在 github 上建立了一个项目。
 
-此项目基于 cocos2d-x 2.1.4
+此项目基于 cocos2d-x 2.1.4。
 
 [cocos2d-x-project-creator](https://github.com/zrong/cocos2d-x-project-creator)
 
@@ -54,12 +54,12 @@ Virtual Studio项目解决方案中对于其他项目的引用，采用的是相
 2. 使用github项目中的文件夹覆盖自己的cocos2d-x文件夹中的同名目录。用 OS X 的同学要小心点。
 3. 后面就看Usage吧：
 
-	Usage: create_project.py -project PROJECT_NAME -package PACKAGE_NAME -language PROGRAMING_LANGUAGE -path d:/works/projects/
-	Options:
-	  -project   PROJECT_NAME          Project name, for example: MyGame
-	  -package   PACKAGE_NAME          Package name, for example: com.MyCompany.MyAwesomeGame
-	  -language  PROGRAMING_LANGUAGE   Major programing lanauge you want to used, should be [cpp | lua | javascript]
-	  -path  PROJECT_PATH The directory that project will create in, should be [ d:/works/projects/ | /home/zrong/projects/ ]
-
-	Sample 1: ./create_project.py -project MyGame -package com.MyCompany.AwesomeGame
-	Sample 2: ./create_project.py -project MyGame -package com.MyCompany.AwesomeGame -language cpp -path d:/works/projects/
+>Usage: create_project.py -project PROJECT_NAME -package PACKAGE_NAME -language PROGRAMING_LANGUAGE -path d:/works/projects/
+>Options:
+>  -project   PROJECT_NAME          Project name, for example: MyGame
+>  -package   PACKAGE_NAME          Package name, for example: com.MyCompany.MyAwesomeGame
+>  -language  PROGRAMING_LANGUAGE   Major programing lanauge you want to used, should be [cpp | lua | javascript]
+>  -path  PROJECT_PATH The directory that project will create in, should be [ d:/works/projects/ | /home/zrong/projects/ ]
+>
+>Sample 1: ./create_project.py -project MyGame -package com.MyCompany.AwesomeGame
+>Sample 2: ./create_project.py -project MyGame -package com.MyCompany.AwesomeGame -language cpp -path d:/works/projects/
