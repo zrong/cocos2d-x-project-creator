@@ -10,7 +10,7 @@ context = {
 "language"          : "undefined",
 "src_project_name"  : "undefined",
 "src_package_name"  : "undefined", 
-"dst_project_name"  : "undeifned",
+"dst_project_name"  : "undefined",
 "dst_package_name"  : "undefined",
 "src_project_path"  : "undefined",
 "dst_project_path"  : "undefined",
@@ -59,7 +59,6 @@ def checkParams(context):
         if "-project" == sys.argv[i]:
             # read the next param as project_name
             context["dst_project_name"] = sys.argv[i+1]
-            context["dst_project_path"] = os.getcwd() + "/../../projects/" + context["dst_project_name"]
         elif "-package" == sys.argv[i]:
             # read the next param as g_PackageName
             context["dst_package_name"] = sys.argv[i+1]
@@ -68,8 +67,16 @@ def checkParams(context):
             context["language"] = sys.argv[i+1]
         elif "-path" == sys.argv[i]:
             # fill the custom path
-            context["dst_project_path"] = sys.argv[i+1] + context["dst_project_name"]
+            context["dst_project_path"] = sys.argv[i+1]
     
+    print  "path:" + context["dst_project_path"]
+    print  "name:" + context["dst_project_name"]
+
+    if context["dst_project_path"] == "undefined":
+        context["dst_project_path"] = os.getcwd() + "/../../projects/" + context["dst_project_name"]
+    else:
+        context["dst_project_path"] += context["dst_project_name"]
+
     # pinrt error log our required paramters are not ready
     raise_error = False
     if context["dst_project_name"] == "undefined":
