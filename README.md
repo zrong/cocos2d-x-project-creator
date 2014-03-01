@@ -34,7 +34,7 @@ Virtual Studio项目解决方案中对于其他项目的引用，采用的是相
 
 	项目文件 "d:\works\projects\test\proj.win32\$(COCOS2DX_HOME)\CocosDenshion\proj.win32\CocosDenshion.vcxproj" 已被移动、重命名或不在您的计算机上
 
-这说明解决方案并不支持环境变量。
+使用 `%COCOS2DX_HOME%` 这种语法解决这个问题。
 
 ## 最终解决
 
